@@ -7,7 +7,10 @@
  */
 package com.olivia.community.entity;
 
-import java.util.Date;
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.*;
 
 /**
  * @author zxuyi
@@ -16,17 +19,75 @@ import java.util.Date;
  * @date 2023/3/12 13:10
  */
 
+@EqualsAndHashCode(callSuper = true)
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+@TableName("user")
+public class User extends BaseEntity {
 
-public class User {
+    private static final long serialVersionUID = 1L;
 
+    /**
+     * id
+     */
+    @TableId(type = IdType.ASSIGN_ID)
     private int id;
+
+    /**
+     * userId
+     */
+    private String userId;
+
+    /**
+     * username
+     */
     private String username;
+
+    /**
+     * password
+     */
     private String password;
+
+    /**
+     * salt
+     */
     private String salt;
+
+    /**
+     * email
+     */
     private String email;
-    private int type;
-    private int status;
+
+    /**
+     * telephone
+     */
+    private String telephone;
+
+    /**
+     * gender
+     */
+    private String gender;
+
+    /**
+     * userType
+     */
+    private int userType;
+
+    /**
+     * avatar
+     */
+    private String avatar;
+
+    /**
+     * activationCode
+     */
     private int activationCode;
+
+    /**
+     * headerUrl
+     */
     private String headerUrl;
 
 }
