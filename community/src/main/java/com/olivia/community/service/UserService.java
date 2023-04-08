@@ -1,10 +1,3 @@
-/*
- * @Title:  community
- * @Package com.olivia.community.service
- * @author: zxuyi
- * @date:   2023/3/12 15:16
- * @version V1.0
- */
 package com.olivia.community.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
@@ -30,6 +23,14 @@ public interface UserService extends IService<User> {
     */
     Map<String, Object> register(User user);
 
+    /**
+    * @description: add a user
+    * @param user User
+    * @return int
+    * @author zxuyi
+    * @date 2023/3/12 17:10
+    */
+    int insert(User user);
 
 
 

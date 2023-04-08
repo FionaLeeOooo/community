@@ -1,10 +1,3 @@
-/*
- * @Title:  community
- * @Package com.olivia.community.entity
- * @author: zxuyi
- * @date:   2023/3/12 13:41
- * @version V1.0
- */
 package com.olivia.community.entity;
 
 import lombok.Data;

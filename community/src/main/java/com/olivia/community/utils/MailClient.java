@@ -1,11 +1,4 @@
-/*
- * @Title:  community
- * @Package com.olivia.community.config
- * @author: zxuyi
- * @date:   2023/3/12 15:40
- * @version V1.0
- */
-package com.olivia.community.config;
+package com.olivia.community.utils;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

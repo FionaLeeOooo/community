@@ -1,10 +1,3 @@
-/*
- * @Title:  community
- * @Package com.olivia.community.entity
- * @author: zxuyi
- * @date:   2023/3/12 13:10
- * @version V1.0
- */
 package com.olivia.community.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
@@ -33,7 +26,7 @@ public class User extends BaseEntity {
      * id
      */
     @TableId(type = IdType.ASSIGN_ID)
-    private int id;
+    private String id;
 
     /**
      * userId
@@ -73,7 +66,7 @@ public class User extends BaseEntity {
     /**
      * userType
      */
-    private int userType;
+    private String userType;
 
     /**
      * avatar
@@ -83,7 +76,7 @@ public class User extends BaseEntity {
     /**
      * activationCode
      */
-    private int activationCode;
+    private String activationCode;
 
     /**
      * headerUrl
